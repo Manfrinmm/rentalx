@@ -70,8 +70,6 @@ describe("List cars", () => {
 
     const cars = await listAvailableCarsUseCase.execute({ name: car2.name });
 
-    console.log({ cars });
-
     expect(cars).toEqual(
       expect.arrayContaining([expect.objectContaining(car2)])
     );
