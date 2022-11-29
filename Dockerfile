@@ -10,4 +10,6 @@ COPY . .
 
 EXPOSE 3333
 
+ENV RUNNING_MODE=docker
+
 CMD [ "yarn", "dev" ]

@@ -100,8 +100,6 @@ describe("List cars", () => {
 
     const cars = await listAvailableCarsUseCase.execute({ brand: car2.brand });
 
-    console.log({ cars });
-
     expect(cars).toEqual(
       expect.arrayContaining([expect.objectContaining(car2)])
     );
